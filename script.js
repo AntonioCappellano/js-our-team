@@ -41,7 +41,7 @@ const teamContainer = document.getElementById("team-container");
 let cards = "";
 for (const member of teamMembers) {
   cards += ` 
-  <div class="row">
+  
     <div class="col">
       <div class="card-image">
         <img src="./${member.img}" />
@@ -52,7 +52,7 @@ for (const member of teamMembers) {
          <a>${member.email}</a>
         </div>
     </div>
-  </div>
+  
   `;
 }
 teamContainer.innerHTML = cards;
