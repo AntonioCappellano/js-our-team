@@ -40,17 +40,19 @@ const teamMembers = [
 const teamContainer = document.getElementById("team-container");
 let cards = "";
 for (const member of teamMembers) {
-  cards += `
-  <div class="team-card">
-        <div class="team-img">
-          <img src="./${member.img}" />
-        </div>
-        <div class="card-text">
-          <h4>${member.name}</h4>
-          <p>${member.role}</p>
-          <p>${member.email}</p>
-        </div>
+  cards += ` 
+  <div class="row">
+    <div class="col">
+      <div class="card-image">
+        <img src="./${member.img}" />
       </div>
+       <div class="card-text">
+         <h4>${member.name}</h4>
+         <p>${member.role}</p>
+         <a>${member.email}</a>
+        </div>
+    </div>
+  </div>
   `;
 }
 teamContainer.innerHTML = cards;
