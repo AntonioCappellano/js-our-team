@@ -42,9 +42,9 @@ let cards = "";
 for (const member of teamMembers) {
   cards += ` 
   
-    <div class="col">
+    <div class="col m-2 text-bg-dark d-flex align-items-start">
       <div class="card-image">
-        <img src="./${member.img}" />
+        <img " src="./${member.img}" class="img-fluid" alt="${member.img}" />
       </div>
        <div class="card-text">
          <h4>${member.name}</h4>
